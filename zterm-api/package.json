@@ -1,0 +1,16 @@
+{
+  "name": "zterm-api",
+  "version": "1.0.0",
+  "description": "A TN3270 emulator written in native javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ebcdic-ascii": "^1.1.1",
+    "iconv-lite": "^0.6.3",
+    "ws": "^8.17.0"
+  }
+}
