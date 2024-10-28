@@ -5,7 +5,7 @@ A native javascript TN3270 api and VS Code extension for scripting and debugging
 
 # Performance
 
-zterm-js is capable of navigating up to 25 screens per second (or faster), this include recognition, inserting text, and sending commands (AID keys).
+zterm-js is capable of navigating up to 25 screens per second (or faster), this includes recognition, inserting text, and sending commands (AID keys).
 
 # Example
 
