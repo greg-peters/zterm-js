@@ -1,0 +1,35 @@
+{
+  "name": "tn3270-terminal",
+  "displayName": "TN3720 Terminal",
+  "description": "TN3270 Emulator (read only)",
+  "version": "0.0.1",
+  "publisher": "Greg Peters",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.mainframeTerminal"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.mainframeTerminal",
+        "title": "Open Mainframe Terminal"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "echo Compiling..."
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "path": "^0.12.7",
+    "typescript": "^4.0.3",
+    "vscode": "^1.1.37"
+  }
+}

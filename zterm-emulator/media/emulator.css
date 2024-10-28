@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; /* Monospaced font for the terminal look */
+    background-color: #000;
+    color: cyan;
+    overflow: hidden;
+}
+
+#terminal {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse; /* Removes space between cells */
+}
+
+#screenContainer {
+    display: table-row;
+    height: 100%;
+}
+
+#screen {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Removes default margin */
+    overflow: hidden; /* Disables scrolling */
+    white-space: pre-wrap; /* Maintains whitespace */
+    outline: none; /* Removes focus outline */
+    font-size: 2vw; /* Font size scales with window width */
+    line-height: 1.2; /* Adjust line height to ensure characters are properly spaced vertically */
+}
+
+#oia {
+    width: 100% !important;
+    display: table-row; /* Ensures that OIA section fits as a row within the table */
+}
+
+#oia hr {
+    margin: 0; /* Aligns hr to no space around */
+    width: 100% !important;
+}
+
+#oia table {
+    width: 100%;
+    table-layout: fixed; /* Helps prevent overflow and ensures proper table scaling */
+}
+
+#oia td {
+    vertical-align: top;
+    overflow: hidden; /* Prevents overflow in table cells */
+    font-size: 2.4vw; /* Font size scales with window width */
+}
+
+#coordinatesArea {
+    text-align: right;
+}
+
+#connectionArea {
+    text-align: center;
+}
+
+#messageArea {
+    text-align: left;
+}
+
+::selection {
+    background: none; /* No background on selection */
+    color: inherit; /* Text color remains the same */
+}
